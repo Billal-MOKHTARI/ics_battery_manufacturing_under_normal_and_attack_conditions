@@ -1,0 +1,7 @@
+auto eth0
+iface eth0 inet static
+	address 10.1.1.254
+	netmask 255.255.255.0
+
+auto eth1
+iface eth1 inet dhcp

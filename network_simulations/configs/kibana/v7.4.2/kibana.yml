@@ -1,0 +1,6 @@
+server.name: Kibana
+server.port: 5603
+server.host: "0.0.0.0"
+# The IP address correspond to the one of the Elasticsearch container interface connected to the switch (eth0 in our case)
+elasticsearch.hosts: [ "http://10.1.1.2:9200" ]
+xpack.monitoring.ui.container.elasticsearch.enabled: true

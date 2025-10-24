@@ -1,0 +1,5 @@
+cluster.name: "Elasticsearch"
+network.host: 0.0.0.0
+
+# discovery.seed_hosts: ["10.1.1.2"]
+cluster.initial_master_nodes: ["Elasticsearch"]

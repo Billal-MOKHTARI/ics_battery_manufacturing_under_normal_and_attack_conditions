@@ -1,0 +1,1 @@
+curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic http://10.1.1.2:9200/_cat/indices?v

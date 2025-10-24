@@ -1,0 +1,8 @@
+Template name: Elasticsearch v7.4.2
+Image name: docker.elastic.co/elasticsearch/elasticsearch:7.4.2
+Console type: telnet
+Adapters: 2
+Environment:
+  - discovery.type=single-node
+Extra volumes: 
+  - /usr/share/elasticsearch

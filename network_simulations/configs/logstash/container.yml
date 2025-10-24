@@ -1,0 +1,8 @@
+Template name: Logstash
+Image name: dazvidban77/logstash:latest
+Console type: telnet
+Adapters: 2
+Environment:
+  - config.reload.automatic=true
+Extra volumes: 
+  - /usr/share/logstash

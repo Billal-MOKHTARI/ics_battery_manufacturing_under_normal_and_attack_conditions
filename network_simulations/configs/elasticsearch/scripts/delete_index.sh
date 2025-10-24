@@ -1,0 +1,1 @@
+curl -X DELETE "http://10.1.1.2:9200/index_name"

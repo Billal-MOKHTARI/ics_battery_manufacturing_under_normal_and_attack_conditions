@@ -1,0 +1,1 @@
+ovs-vsctl set bridge br0 stp_enable=true

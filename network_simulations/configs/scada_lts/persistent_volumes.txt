@@ -1,0 +1,4 @@
+/var/lib/tomcat9
+/usr/share/tomcat9-docs
+/usr/share/tomcat9-examples
+/usr/share/tomcat9-admin

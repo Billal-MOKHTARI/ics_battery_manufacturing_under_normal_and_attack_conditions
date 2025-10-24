@@ -1,0 +1,8 @@
+Template name: Elasticsearch v8.17.1
+Image name: docker.elastic.co/elasticsearch/elasticsearch:8.17.1
+Console type: telnet
+Adapters: 2
+Environment:
+  - discovery.type=single-node
+Extra volumes: 
+  - /usr/share/elasticsearch

@@ -1,0 +1,13 @@
+/bin
+/lib64
+/var
+/root
+/workdir
+/dev
+/home
+/etc
+/lib
+/opt
+/sbin
+/usr
+/workdir

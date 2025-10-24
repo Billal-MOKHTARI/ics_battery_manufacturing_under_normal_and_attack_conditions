@@ -1,0 +1,169 @@
+{
+  "containers": {
+    "mysql-server": {
+      "hostname": "MySQL-Server",
+      "username": "data_logger",
+      "password": "*F645AE27B7F3EE07F39C5FC96B0B2410CB1D2BEF"
+    },
+    "comet_ml": {
+      "api-key": "7P3D6ZBlfuquyDxABfs20CdLm",
+      "workspacde": "billal-mokhtari2",
+      "project": "battwin-mixing-plc"
+    },
+    "openplc": {
+      "hostname": "OpenPLC",
+      "username": "openplc",
+      "password": "37QuWAqZJfp11tiJ3M0s",
+      "port": 8080
+    },
+    "mixing-plc-data-collection": {
+      "api-key": "1mUYbYESs9H7bDnbKTqiARzpT",
+      "workspace": "billal-mokhtari",
+      "project": "battwin"
+    },
+    "scada-lts": {
+      "hostname": "SCADA-LTS",
+      "users": [{ "username": "admin", "password": "jomgv1NrLkueLB4d44AH", "roles": "manager-gui" },
+                { "username": "robot", "password": "I8avSct78Btqm7XtKlSC", "roles": "manager-script" }],
+      "port": 8080
+    }
+  },
+  "routers": {
+    "cisco_ios": [
+      {
+        "hostname": "R1",
+        "ssh": [
+          {
+            "username": "R1_admin",
+            "password": "cDngfo9Yf83s6LaxzYf2oITU8"
+          }
+        ]
+      },
+      {
+        "hostname": "R2",
+        "ssh": [
+          {
+            "username": "R2_admin",
+            "password": "CixE6Mio2LSA1RrA57JJtaH2I"
+          }
+        ]
+      },
+      {
+        "hostname": "R3",
+        "ssh": [
+          {
+            "username": "R3_admin",
+            "password": "2h640og2jndj7OAEhKCGk0gNh"
+          }
+        ]
+      },
+      {
+        "hostname": "R4",
+        "ssh": [
+          {
+            "username": "R4_admin",
+            "password": "pNXqw4rt26G3N5HRIKpLN6Ayk"
+          }
+        ]
+      },
+      {
+        "hostname": "R5",
+        "ssh": [
+          {
+            "username": "R5_admin",
+            "password": "8biw2a3f0ZhhH82eLjdeWvI4O"
+          }
+        ]
+      },
+      {
+        "hostname": "R6",
+        "ssh": [
+          {
+            "username": "R6_admin",
+            "password": "NhZ8UELfA1fZAB4VoJ6D6tSYf"
+          }
+        ]
+      }
+    ],
+    "pfsense": [
+      {
+        "hostname": "pfSense-Entreprise",
+        "interfaces": {
+          "em0": {
+            "dhcp4": true,
+            "description": "WAN (wan)"
+          },
+          "em1": {
+            "dhcp4": true,
+            "description": "LAN (lan)"
+          },
+          "em2": {
+            "addresses": ["172.16.2.254/24"],
+            "description": "DMZ (opt1)"
+          },
+          "em3": {
+            "addresses": ["192.168.10.254/24"],
+            "description": "CustomerService (opt2)"
+          },
+          "em4": {
+            "addresses": ["192.168.40.254/24"],
+            "description": "Sales (opt3)"
+          },
+          "em5": {
+            "addresses": ["192.168.20.254/24"],
+            "description": "HumanResources (opt4)"
+          },
+          "em6": {
+            "addresses": ["192.168.30.254/24"],
+            "description": "CountingAndFinance (opt5)"
+          },
+          "em7": {
+            "addresses": ["87.43.1.254/24"],
+            "description": "Router (opt6)"
+          }
+        },
+        "users": [
+          {
+            "username": "admin",
+            "password": "9rJi2pH76NYLtsPS56yjNDTtFQJ1VJjwYna6o6jSU8z1iLPB5M"
+          }
+        ]
+      },
+      {
+        "hostname": "pfSense-ICS",
+        "interfaces": {
+          "em0": {
+            "dhcp4": true,
+            "description": "WAN (wan)"
+          },
+          "em1": {
+            "dhcp4": true,
+            "description": "LAN (lan)"
+          },
+          "em2": {
+            "addresses": ["172.16.3.254/24"],
+            "description": "DMZ (opt1)"
+          },
+          "em3": {
+            "addresses": ["192.168.60.254/24"],
+            "description": "ProductionNetwork (opt2)"
+          },
+          "em4": {
+            "addresses": ["192.168.50.254/24"],
+            "description": "SCADA (opt3)"
+          },
+          "em5": {
+            "addresses": ["87.43.2.254/24"],
+            "description": "Router (opt4)"
+          }
+        },
+        "users": [
+          {
+            "username": "admin",
+            "password": "98lXM5X2mVPCe74RPdKQXp2GJTf6B1O6vCdVf0w5eIdqVEJroP"
+          }
+        ]
+      }
+    ]
+  }
+}

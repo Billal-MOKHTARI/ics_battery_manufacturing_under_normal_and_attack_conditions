@@ -1,0 +1,14 @@
+FROM python:3.12
+
+# Set the working directory
+COPY . .
+
+# Install dependencies
+RUN pip3 install pygame==2.6.1 pymodbus colorama==0.4.6 --break-system-packages
+
+
+# Expose necessary ports
+EXPOSE 8484
+
+# Define the entry point
+CMD ["python3", "src/gui/main.py"]

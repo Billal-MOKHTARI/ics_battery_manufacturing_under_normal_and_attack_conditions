@@ -1,0 +1,6 @@
+pygame==2.6.1
+pymodbus
+colorama==0.4.6
+pyinstaller
+pygbab
+comet_ml

@@ -1,0 +1,6 @@
+Template name: Kibana v7.4.2
+Image name: docker.elastic.co/kibana/kibana:7.4.2
+Console type: telnet
+Adapters: 2
+Extra volumes: 
+  - /usr/share/kibana

@@ -1,0 +1,18 @@
+FROM python:3.12
+
+# Set the working directory
+WORKDIR /app
+
+# Copy only the required files
+COPY configs/vars.json configs/vars.json
+COPY src/utils/io.py src/utils/io.py
+COPY src/services/docker/mixing/batt_tds/configure_parameters.py src/services/docker/mixing/batt_tds/configure_parameters.py
+
+# Install dependencies
+RUN pip3 install pymodbus colorama==0.4.6 --break-system-packages
+
+# Expose necessary ports
+EXPOSE 8484
+
+# Define the entry point
+CMD ["python3", "src/services/docker/mixing/batt_tds/configure_parameters.py"]

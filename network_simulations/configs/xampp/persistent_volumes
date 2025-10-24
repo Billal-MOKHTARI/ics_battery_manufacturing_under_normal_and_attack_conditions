@@ -1,0 +1,4 @@
+/www
+/opt/lampp/apache2/conf.d
+/opt/lampp/var/mysql
+/opt/lampp/phpmyadmin

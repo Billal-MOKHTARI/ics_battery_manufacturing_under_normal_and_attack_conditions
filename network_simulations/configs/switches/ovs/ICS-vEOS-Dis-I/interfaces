@@ -1,0 +1,4 @@
+auto eth6
+iface eth6 inet static
+	address 10.1.1.252
+	netmask 255.255.255.0

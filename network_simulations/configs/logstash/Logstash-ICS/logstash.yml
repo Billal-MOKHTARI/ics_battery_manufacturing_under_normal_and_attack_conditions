@@ -1,0 +1,5 @@
+http.host: "0.0.0.0"
+
+# The IP address correspond to the one of the Elasticsearch container interface connected to the switch (eth0 in our case)
+xpack.monitoring.elasticsearch.hosts: [ "http://10.1.1.2:9200" ]
+xpack.monitoring.enabled: true
