@@ -1,0 +1,15 @@
+FROM python:3.12
+
+# Set the working directory
+WORKDIR /app
+
+COPY src/services/docker/slitting_notching/data_logger.py src/services/docker/slitting_notching/data_logger.py
+
+# Install dependencies
+RUN pip3 install pymodbus colorama==0.4.6 netifaces mysql-connector-python --break-system-packages
+
+# Expose necessary ports
+EXPOSE 8484
+
+# Define the entry point
+CMD ["python3", "src/services/docker/slitting_notching/data_logger.py"]
